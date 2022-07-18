@@ -8,6 +8,7 @@ function Main(props) {
     let [dark, setDark] = useState(true);
 
     let primaryBG = dark ? 'hsl(230, 17%, 14%)' : 'hsl(0, 0%, 100%)';
+    let background = dark ? 'hsl(232, 19%, 15%)' : 'hsl(225, 100%, 98%)';
     let hoverBG = dark ? 'hsl(232, 19%, 15%)' : 'hsl(225, 100%, 98%)';
     let cardBG = dark ? 'hsl(228, 28%, 20%)' : 'hsl(227, 47%, 96%)';
     let primaryText = dark ? 'hsl(0, 0%, 100%)' : 'hsl(230, 17%, 14%)';
@@ -16,6 +17,7 @@ function Main(props) {
 
     return (
         <div className="container-all" style={{ backgroundColor: primaryBG, color: primaryText }}>
+            <div className="background" style={{ backgroundColor: background }}></div>
             <div className="container-main">
                 <div className="container-header">
                     <div className="container-upper-header">
